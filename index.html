@@ -12,12 +12,17 @@
 <div class="wrapper">
     <div class="outer">
         <div class="text-wrapper">
-            <input type="text"
+            <input
+                    id="textInput"
+                    type="text"
                    placeholder="insert number here"
             class="form-control">
         </div>
         <div class="number-wrapper">
-            <input style="background: #1abc9c" type="button" value="+">
+            <input
+                    onclick="sum()"
+                    style="background: #1abc9c"
+                    type="button" value="+">
             <input style="background: #2ecc71" type="button" value="-">
             <input style="background: #2980b9" type="button" value="/">
             <input style="background: #34495e"  type="button" value="*">
