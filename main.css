@@ -9,8 +9,23 @@
 .outer{
     width: 250px;
     height: 300px;
+    display: flex;
     border-radius: 3px;
+    flex-direction: column;
     -webkit-box-shadow: 2px 10px 20px -1px rgba(37,58,161,1);
     -moz-box-shadow: 2px 10px 20px -1px rgba(37,58,161,1);
     box-shadow: 2px 10px 20px -1px rgba(37,58,161,1);
+}
+
+.text-wrapper{
+  height: auto;
+    border: 1px solid red;
+    padding: 10px;
+
+}
+
+.text-wrapper>input[type=number]{
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
 }
