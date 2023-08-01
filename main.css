@@ -18,14 +18,41 @@
 }
 
 .text-wrapper{
-  height: auto;
-    border: 1px solid red;
+    height: auto;
     padding: 10px;
 
 }
 
-.text-wrapper>input[type=number]{
+.text-wrapper>input[type=text]{
     text-align: right;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.number-wrapper{
+
+
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 10px 0 10px;
+    justify-content: space-between;
+}
+.number-wrapper:last-child{
+    padding: 0 10px;
+}
+.number-wrapper:last-child > input{
+    width: 100%;
+}
+
+.number-wrapper>input{
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.number-wrapper >input:hover{
+    background-color: #95a5a6 !important;
+
 }
