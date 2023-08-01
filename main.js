@@ -1,14 +1,19 @@
-number1=0;
-number2=0;
+let number1=0;
+let number2=0;
 sum=()=>{
-     calculate("+")
+     calculate("+");
 }
 
 function calculate(exp) {
+   let tempvalue=document.
+    getElementById('textInput').value;
     if (number1===0){
-        alert('Please insert a number!');
-        number1=document.
-        getElementById('textInput').value;
+        if(tempvalue!==''){
+            number1=tempvalue;
+        }else{
+            alert('please insert a number!');
+            return;
+        }
 
     }
     console.log(exp, number1);
