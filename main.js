@@ -1,5 +1,7 @@
 let number1 = 0;
 let number2 = 0;
+let tempPlaceholder='Insert Number 1';
+document.getElementById('textInput').placeholder=tempPlaceholder;
 
 sum = () => calculate("+");
 mul = () => calculate("*");
@@ -18,6 +20,8 @@ function calculate(exp) {
     if (number1 === 0) {
         number1 = tempvalue;
         document.getElementById('textInput').value = '';
+        tempPlaceholder='Insert Number 2';
+        document.getElementById('textInput').placeholder=tempPlaceholder;
         return;
     } else {
         number2 = tempvalue;
@@ -54,4 +58,6 @@ refresh=()=>{
     number1=0;
     number2=0;
     document.getElementById('textInput').value='';
+    tempPlaceholder='Insert Number 1';
+    document.getElementById('textInput').placeholder=tempPlaceholder;
 }
