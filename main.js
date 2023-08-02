@@ -1,20 +1,18 @@
 let number1=0;
 let number2=0;
 sum=()=>{
-     calculate("+");
+    calculate("+");
 }
 
 function calculate(exp) {
-   let tempvalue=document.
+    let tempvalue=document.
     getElementById('textInput').value;
+    if (isNaN(tempvalue) || tempvalue===''){
+        alert('please enter a valid number');
+        return;
+    }
     if (number1===0){
-        if(tempvalue!==''){
             number1=tempvalue;
-        }else{
-            alert('please insert a number!');
-            return;
-        }
-
     }
     console.log(exp, number1);
 }
